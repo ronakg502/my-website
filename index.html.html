@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gaming Store - Registration</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: aquamarine;
+margin: 20px;
+}
+
+h1 {
+text-align: center;
+color: red;
+}
+
+form {
+background-color: offwhite;
+padding: 20px;
+border-radius: 5px;
+
+max-width: 600px;
+margin: auto;
+}
+
+label {
+display: block;
+margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+input[type="submit"] {
+background-color: #4CAF50;
+color: white;
+border: none;
+padding: 10px 15px;
+cursor: pointer;
+border-radius: 4px;
+margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+background-color: #45a049;
+}
+</style>
+</head>
+<body>
+    <h1>Gaming Store Registration Form</h1>
+    <form action="/submit-registration" method="POST">
+        <Names>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <Email>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <Password>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <Phone Number>
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" required><br><br>
+
+        <Preferred Games>
+        <label for="preferredGames">Preferred Game Genre:</label>
+        <select id="preferredGames" name="preferredGames">
+            <option value="action">Action</option>
+            <option value="adventure">Adventure</option>
+            <option value="fps">First-Person Shooter</option>
+            <option value="rpg">RPG</option>
+            <option value="sports">Sports</option>
+        </select><br><br>
+
+        <Submit Button>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
